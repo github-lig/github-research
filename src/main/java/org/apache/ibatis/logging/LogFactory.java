@@ -18,6 +18,8 @@ package org.apache.ibatis.logging;
 import java.lang.reflect.Constructor;
 
 /**
+ * 功能介绍：https://mybatis.org/mybatis-3/zh/logging.html
+ * TODO:此处使用的设计模式？？？
  * @author Clinton Begin
  * @author Eduardo Macarron
  */

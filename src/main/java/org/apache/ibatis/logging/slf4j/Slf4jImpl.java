@@ -22,6 +22,7 @@ import org.slf4j.Marker;
 import org.slf4j.spi.LocationAwareLogger;
 
 /**
+ * 适配器模式
  * @author Clinton Begin
  * @author Eduardo Macarron
  */
