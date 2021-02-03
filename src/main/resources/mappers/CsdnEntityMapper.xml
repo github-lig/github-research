@@ -5,7 +5,7 @@
 <mapper namespace="org.apache.ibatis.test.mapper.CsdnEntityMapper">
 
     <insert id="insert">
-        insert into csdn_entity (title, content, author, sex)
+        insert into CsdnEntityDO (title, content, author, sex)
             values (#{title}, #{content}, #{author}, #{sex})
     </insert>
 </mapper>

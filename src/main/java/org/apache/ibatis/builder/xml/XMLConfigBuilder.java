@@ -219,6 +219,12 @@ public class XMLConfigBuilder extends BaseBuilder {
     }
   }
 
+  /**
+   * 解析mybatis-config.xml中的properties，并与创建SqlSessionFactory时传入的properties进行合并。并且传入的属性覆盖xml中配置的属性
+   *
+   * @param context
+   * @throws Exception
+   */
   private void propertiesElement(XNode context) throws Exception {
     if (context != null) {
       Properties defaults = context.getChildrenAsProperties();

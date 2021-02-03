@@ -904,7 +904,7 @@ public class Configuration {
       do {
         resolved = false;
         Iterator<ResultMapResolver> iterator = incompleteResultMaps.iterator();
-        while (iterator.hasNext()) {
+        while (iterator.hasNext()) { //TODO:此处保证每个解析器至少被解析一次，并且保证如果有解析异常的解析器，会抛出第一个解析异常的错误信息
           try {
             iterator.next().resolve();
             iterator.remove();
